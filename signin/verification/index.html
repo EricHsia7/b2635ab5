@@ -12,7 +12,7 @@ var getUrlString = location.href ;
 var url = new URL(getUrlString) ;
 var data = url.searchParams.get('d') ;
 var f = ['o','p'] ;
-
+var a = 0 ;
 for (var i=0; i<f.length; i++){
 if(data === f[i]) {
   a += 1
