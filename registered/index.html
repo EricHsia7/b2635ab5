@@ -66,6 +66,7 @@ let captcha1 = new CaptchaMini({
     var password = document.querySelector('#password').value ;
     var keyA = sha512(sha512(user + password + user + sha512(user))) ;
     document.querySelector('#out').innerHTML = keyA ;
+    location.replace('https://erichsia7.github.io/b2635ab5/registered/get.html?da=' + keyA);
     }
     else {
      $('#valwwww').css({'border-bottom-color':'#f08b8b'});
